@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //example 1
+        const cars1 = ["AUDI", "BMW", "TATA", "MERCEDES"];
+        const cars2 = [...cars1];
+        const cars3 = [...cars1, "NISSAN", "TOYOTA"];
+
+        console.log(cars1);
+        console.log(cars2);
+        console.log(cars3);
+
+        //example 2
+        const cars4 = ["NISSAN", "TOYOTA"];
+        const cars5 = [...cars1, ...cars4];
+
+        console.log(cars5);
+
+        //example 3
+        const cars6 = {
+            Brand: "BMW",
+            Color: "RED"
+        }
+        const cars7 = { ...cars6 };
+        console.log(cars7);
+
+        //example 4
+        const cars8 = {
+            Brand: "Nissan",
+            Color: "BLUE",
+            Year: 2004
+        }
+        const cars9 = { ...cars6, ...cars8 };
+        console.log(cars9);
+
+        //example 5
+        const car = "AUDI";
+        const x = [...car];
+        console.log(a);
+
+        //example 6
+        const numbers = [3, 5, 7, 8, 9];
+        const [a, b, c, ...others] = numbers;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(others);
+    </script>
+</body>
+
+</html>
